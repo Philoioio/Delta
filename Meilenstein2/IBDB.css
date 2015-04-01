@@ -1,6 +1,11 @@
+/* Ueberschrift*/
+#Headline { color: rgb(0,0,0); font-size:22px}
 
-
-.wurst {color: red;
+/*farbige Buchstaben der Ueberschrift*/
+b { color : rgb(63, 72, 204)
 }
-#Headline { color: black;font-size:22px}
-#Headline:first-letter {color : blue}
+
+/*Hintergrundfarbe der Webseite*/
+body {
+    background-color: rgb(153,217,234)
+}
