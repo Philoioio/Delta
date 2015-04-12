@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-/*Format*/
+/*Format und Hintergrundfarbe der Webseite*/
 body {
     margin: 5%;
     background-color: rgb(153, 217, 234);
@@ -15,20 +15,59 @@ body {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 900;
     text-align: center;
-    margin-bottom: 5%;
+
 }
 /*Farbige Buchstraben der Überschrift*/
 b {color : rgb(63, 72, 204)}
 
-/*Mitte*/
-#books {font-size:72px; font-weight: bolder }
+/*We Books*/
+#webooks {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:72px;
+        font-weight: 900;
+        position: relative;
+        text-align: center;
+        color: rgb(63, 72, 204);
+        word-spacing: 7em;
+}
+p{
+    position: relative;
+    margin: 1em 0 0 1.4em ;
 
+}
+/*Bild*/
 img {
-
+    width: 400px;
+    height: 245px;
+    display: block;
+    margin: auto;
     border-color: rgb(63,72,204);
     border-style: solid;
 }
+/*Das Auswahlmenü*/
+#buttons {
+    margin: 5% 40% 0 40%;
+    border: solid;
+    border-color: rgb(63, 72, 204);
+}
+#buttons a {
+    padding: 5% 0 5% 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: rgb(0, 162, 232);
+}
+/*Hover-Effekt*/
+#buttons a:hover {
+    color: rgb(0,0,0);
+    background-color: rgb(63, 72, 204);
+}
+
 
 
