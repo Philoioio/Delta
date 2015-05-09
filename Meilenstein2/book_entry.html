@@ -1,28 +1,64 @@
-<h1>Buch Anlegen</h1><p>
-Ihr Vorname <input type="text“name=„Vorname“ size="30" maxlength="40" value=""/><p>
-Ihr Nachname<input type="text" name=„name“size="30" maxlength="40" value=""/><p>
-Titel des Buches <input type="text" name=„titel“ size="30" maxlength="40" value=""/><p>
-Buchautor <input type="text" size="30" name=„author“ maxlength="40" value=""/><p>
-ISBN <input type=„number“ size="30" name=„isbn“ maxlength="40" value=""/><p>
+<!DOCTYPE html>
+<html>
+<head lang="de">
+    <link rel="stylesheet" type="text/css" href="IBDB.css"/>
+    <meta charset="UTF-8">
+    <title id="Titel" >InternetBookDataBase</title>
 
-Genre<br/>
+    <link rel = "stylesheet" type = "text/css" href ="css/IBDB.css"/>
+</head>
 
-<input type="checkbox" name="genre"value=„Horror“ checked="checked"/>Horror<br/>
-<input type="checkbox" name=„genre“value=„Psysho“ />Psysho<br/>
-<input type="checkbox" name=„genre“value=„Krimi“ />Krimi<br/>
-<input type="checkbox" name=„genre“value=„Doku“ />Doku<br/>
-<input type="checkbox" name=„genre“value=„Komödie“ />Komoedie<br/>
-<input type="checkbox" name=„genre“value=„Romanze“ />Romanze<p>
+<body>
 
 
-Art des Buches
-<select name=„art“ size=„1“>
-<option value=„eBook“>eBook</option> <option value=„Newspaper“>Newspaper</option> <option value=„Taschenbuch“>Taschenbuch</option> <option value=„Lexikon“>Lexikon</option> <option value=„Hardcover“ selected="selected">Hardcover</option><option value=„Paperback>Paperback</option>
-</select>
-<p>
+<h1 id="bookentry">Buch Anlegen</h1>
 
-Kapitel<input type“number“name =„capital“size“30“ maxlength=„2“ value““/><p>
-Erscheinungsjahr <input type“number“name=jahr“size“30“ maxlength=„4“/><p>
-Auflage <input type="text“name=„auflage“ size="30" maxlength="40" value=""/><p>
-Favorit makieren
-<input type="checkbox" name=„filmfavorit“value=„Favorit“/><br/>
+<div id="Infos">
+
+    Buchtitel <input type="text" name="Buchtitel" size="30" maxlength="40" value=""/> <p/>
+
+    Buchautor <input type="text" name="Buchautor"size="30" maxlength="40" value=""/> <p/>
+
+    ISBN <input type="number" name="titel" size="30" maxlength="40" value=""/> <p/>
+
+    Kapitel <input type="number" size="30" name="kapitel" maxlength="40" value=""/> <p/>
+
+    Erscheinungsjahr <input type="number" size="30" name="jahr" maxlength="40" value=""/> <p/>
+
+    Auflage <input type="number" size = "30"  name="auflage" maxlength="40"  value=""/> <p/>
+
+    Art des Buches <select name="art">
+
+    <option value="ebook"> eBook </option>
+    <option value="newspaper"> Newspaper </option>
+    <option value="taschenbuch"> Taschenbuch </option>
+    <option value="lexikon"> Lexikon </option>
+    <option value="hardcover" selected="selected"> Hardcover </option>
+    <option value="paperback"> Paperback </option>
+    </select><br/>
+
+    Genre
+
+    <input type="checkbox" name="genre" value="Horror" checked="checked"/>Horror
+    <input type="checkbox" name="genre" value="Psysho" />Psycho
+    <input type="checkbox" name="genre" value="Krimi" />Krimi
+    <input type="checkbox" name="genre" value="Doku" />Doku
+    <input type="checkbox" name="genre" value="Komödie" />Komoedie
+    <input type="checkbox" name="genre" value="Romanze" />Romanze
+
+</div>
+
+
+<div>
+
+    Dein Vorname  <input type="text" size="30" name="vorname" maxlength="40" value=""/> <br/>
+    Dein Nachname <input type="text" size="30" name="nachname" maxlength="40" value=""/> <br/>
+    Mein Favorit  <input type="checkbox" name="filmfavorit" value="Favorit"/><br/> <br/>
+    </div>
+
+    <input type="submit" id="absenden" name="absenden" value="Absenden">
+
+</body>
+
+
+</html>

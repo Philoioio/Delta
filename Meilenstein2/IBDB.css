@@ -69,5 +69,56 @@ img {
     background-color: rgb(63, 72, 204);
 }
 
+/*Book_Entry_Bereich*/
+/****************************************
+************************
+*/
+
+#bookentry{
+    color: rgb(63, 72, 204);
+    font-size: 22px;
+}
+
+/*Formular für Buch anlegen*/
+#Infos {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: auto;
+}
+
+
+
+select {
+    display: block;
+    width: 13em;
+    margin-bottom: 2%;
+
+}
+
+
+
+
+#absenden {
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    border: solid;
+    border-color: #3f48cc;
+    background-color: #00a2e8;
+    color: #3f48cc;
+    font-weight: 900;
+    width: 20em;
+    height: 3em;
+}
+
+div {
+    float: left;
+    margin-right: 10%;
+}
+
+
+
+
 
 
