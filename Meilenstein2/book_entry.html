@@ -12,55 +12,92 @@
 
 <h1 id="bookentry">Buch Anlegen</h1>
 
+<form action="http://martinakraus.net/createBookEntry.php" method="GET">
+
 <div id="Infos">
 
-    Buchtitel <input type="text" name="Buchtitel" size="30" maxlength="40" value="" autofocus required/> <p/>
 
-    Buchautor <input type="text" name="Buchautor"size="30" maxlength="40" value=""/> <p/>
+    <span class="form">
+    Buchtitel <input type="text" style="width: 192px" class="textbt" name="titel" size="30" maxlength="40" value="" autofocus required/>
+    </span>
+    <br/>
 
-    ISBN <input type="text" name="titel" size="30" maxlength="40" value=""/> <p/>
+    <span class="form">
+    Buchautor <input type="text" style="width: 192px" class="textba" name="autor"size="30" maxlength="40" value="" required/>
+    </span>
+    <br/>
 
-    Kapitel <input type="text" size="30" name="kapitel" maxlength="40" value=""/> <p/>
+    <span class="form">
+    ISBN <input type="number" style="width: 192px" class="textISBN" name="isbn" size="30" maxlength="40" value="" required/>
+    </span>
+    <br/>
 
-    Erscheinungsjahr <input type="text" size="30" name="jahr" maxlength="40" value=""/> <p/>
+    <span class="form">
+    Kapitel <input type="number" style="width: 192px" class="textKap" size="30" name="kapitel" maxlength="40" value="" required/>
+    </span>
+    <br/>
 
-    Auflage <input type="text" size = "30"  name="auflage" maxlength="40"  value=""/> <p/>
+    <span class="form">
+    Erscheinungsjahr <input type="number" style="width: 192px" class="textEJ" size="30" name="jahr" maxlength="40" value="" required/>
+    </span>
+    <br/>
+
+    <span class="form">
+    Auflage <input type="number" style="width: 192px" size = "30" class="textA"  name="auflage" maxlength="40"  value="" required/>
+    </span>
+    <br/>
 
 
-
-    <label for="art">Art des Buches</label>
-        <select name="Art des Buches" size="1" id="art">
+    <span class="form">
+    <label>Art des Buches</label>
+        <select name="art" size="1" maxlength="40" style="width: 198px" class="textadb" required>
             <option value="eBook">eBook</option>
             <option value="Newspaper">Newspaper</option>
             <option value="Taschenbuch">Taschenbuch</option>
             <option value="Lexikon">Lexikon</option>
             <option value="Hardcover" selected="selected">Hardcover</option>
             <option value="Paperback">Paperback</option>
-        </select> <p/>
+        </select>
+    </span>
+    <br/>
 
 
-    Genre
+    <span class="form">
+    <label>Genre</label>
+        <span class="checkboxx1">
+            <input type="checkbox" name="genre" value="Doku" />Doku </br>
+            <input type="checkbox" name="genre" value="Komödie" />Komoedie </br>
+            <input type="checkbox" name="genre" value="Romanze" />Romanze </br>
 
-    <input type="checkbox" name="genre" value="Horror" checked="checked"/>Horror <p/>
-    <input type="checkbox" name="genre" value="Psysho" />Psycho <p/>
-    <input type="checkbox" name="genre" value="Krimi" />Krimi
-    <input type="checkbox" name="genre" value="Doku" />Doku
-    <input type="checkbox" name="genre" value="Komödie" />Komoedie
-    <input type="checkbox" name="genre" value="Romanze" />Romanze
+        </span>
+        <span class="checkboxx2">
+            <input type="checkbox" name="genre" value="Horror" checked="checked"/>Horror </br>
+            <input type="checkbox" name="genre" value="Psysho" />Psycho </br>
+            <input type="checkbox" name="genre" value="Krimi" />Krimi </br>
+        </span>
+    </span>
+
 </div>
 
+    <span class="name">
+        <span class="form">
+            Dein Vorname  <input type="text" style="width: 192px" class="textvn" size="30" name="vorname" maxlength="40" value="" required/>
+        </span> <br/>
+
+        <span class="form">
+            Dein Nachname <input type="text" style="width: 192px" class="textnn" size="30"  name="nachname" maxlength="40" value="" required/>
+        </span> <br/>
+
+        <span class="form">
+            Mein Favorit  <input type="checkbox" class="textmf" name="filmfavorit" value="Favorit"/>
+        </span> <br/>
+    </span>
 
     <div>
-    Dein Vorname  <input type="text" size="30" name="vorname" maxlength="40" value=""/> <p/>
-    Dein Nachname <input type="text" size="30" name="nachname" maxlength="40" value=""/> <p/>
-    Mein Favorit  <input type="checkbox" name="filmfavorit" value="Favorit"/> <p/>
+    <input type="submit" style="width: 250px; height: 40px" id="absenden" name="absenden" value="Absenden">
     </div>
 
-
-    <input type="submit" id="absenden" name="absenden" value="Absenden">
-
-
-
+</form>
 </body>
 
 </html>

@@ -13,15 +13,97 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-left: 150px;
-    border-left: 30px;
 }
 
+
+.form .textbt{
+    position: relative;
+    margin-left: 125px;
+}
+
+.form .textba{
+    position: relative;
+    margin-left: 114px;
+    margin-top: 10px;
+}
+
+.form .textISBN{
+    position: relative;
+    margin-left: 156px;
+    margin-top: 10px;
+}
+
+.form .textKap{
+    position: relative;
+    margin-left: 140px;
+    margin-top: 10px;
+}
+
+.form .textEJ{
+    position: relative;
+    margin-left: 58.5px;
+    margin-top: 10px;
+}
+
+.form .textA{
+    position: relative;
+    margin-left: 134.5px;
+    margin-top: 10px;
+}
+
+.form .textadb{
+    position: relative;
+    margin-left: 76.5px;
+    margin-top: 10px;
+}
+
+#adb{
+
+    width: 200px;
+    text-align: right;
+}
+
+.form .textvn{
+    position: relative;
+    margin-left: 15px;
+}
+
+.form .textnn{
+    position: relative;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+
+.form .textmf{
+    position: relative;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+
+.checkboxx1, .checkboxx2 {
+    position: absolute;
+    float: right;
+}
+
+.form .checkboxx1{
+    position: relative;
+    margin-left: 88px;
+    margin-top: 10px;
+
+}
+
+.form .checkboxx2 {
+    position: relative;
+    margin-left: 148px;
+    margin-top: 10px;
+}
 
 body{
     background:rgb(153,217,234);
     color: rgb(63,72,204);
-}
 
+}
 
 #absenden{
     position: absolute;
@@ -30,6 +112,11 @@ body{
     background-color: #00a2e8;
     color: #3f48cc;
     font-weight: 900;
+
+    margin-left: -175px;
+    margin-top: 250px;
+
+
 
 }
 
