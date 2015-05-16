@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head lang="de">
-    <link rel="stylesheet" type="text/css" href="IBDB.css"/>
+    <link rel="stylesheet" type="text/css" href="bookcss.css"/>
     <meta charset="UTF-8">
-    <title id="Titel" >InternetBookDataBase</title>
+    <title id="Titel" >Buch anlegen</title>
 
-    <link rel = "stylesheet" type = "text/css" href ="css/IBDB.css"/>
+    <link rel = "stylesheet" type = "text/css" href ="css/bookcss.css"/>
 </head>
 
 <body>
-
 
 <h1 id="bookentry">Buch Anlegen</h1>
 
 <div id="Infos">
 
-    Buchtitel <input type="text" name="Buchtitel" size="30" maxlength="40" value=""/> <p/>
+    Buchtitel <input type="text" name="Buchtitel" size="30" maxlength="40" value="" autofocus required/> <p/>
 
     Buchautor <input type="text" name="Buchautor"size="30" maxlength="40" value=""/> <p/>
 
-    ISBN <input type="number" name="titel" size="30" maxlength="40" value=""/> <p/>
+    ISBN <input type="text" name="titel" size="30" maxlength="40" value=""/> <p/>
 
-    Kapitel <input type="number" size="30" name="kapitel" maxlength="40" value=""/> <p/>
+    Kapitel <input type="text" size="30" name="kapitel" maxlength="40" value=""/> <p/>
 
-    Erscheinungsjahr <input type="number" size="30" name="jahr" maxlength="40" value=""/> <p/>
+    Erscheinungsjahr <input type="text" size="30" name="jahr" maxlength="40" value=""/> <p/>
 
-    Auflage <input type="number" size = "30"  name="auflage" maxlength="40"  value=""/> <p/>
+    Auflage <input type="text" size = "30"  name="auflage" maxlength="40"  value=""/> <p/>
 
-    Art des Buches <select name="art">
 
-    <option value="ebook"> eBook </option>
-    <option value="newspaper"> Newspaper </option>
-    <option value="taschenbuch"> Taschenbuch </option>
-    <option value="lexikon"> Lexikon </option>
-    <option value="hardcover" selected="selected"> Hardcover </option>
-    <option value="paperback"> Paperback </option>
-    </select><br/>
+
+    <label for="art">Art des Buches</label>
+        <select name="Art des Buches" size="1" id="art">
+            <option value="eBook">eBook</option>
+            <option value="Newspaper">Newspaper</option>
+            <option value="Taschenbuch">Taschenbuch</option>
+            <option value="Lexikon">Lexikon</option>
+            <option value="Hardcover" selected="selected">Hardcover</option>
+            <option value="Paperback">Paperback</option>
+        </select> <p/>
+
 
     Genre
 
-    <input type="checkbox" name="genre" value="Horror" checked="checked"/>Horror
-    <input type="checkbox" name="genre" value="Psysho" />Psycho
+    <input type="checkbox" name="genre" value="Horror" checked="checked"/>Horror <p/>
+    <input type="checkbox" name="genre" value="Psysho" />Psycho <p/>
     <input type="checkbox" name="genre" value="Krimi" />Krimi
     <input type="checkbox" name="genre" value="Doku" />Doku
     <input type="checkbox" name="genre" value="Komödie" />Komoedie
     <input type="checkbox" name="genre" value="Romanze" />Romanze
-
 </div>
 
 
-<div>
-
-    Dein Vorname  <input type="text" size="30" name="vorname" maxlength="40" value=""/> <br/>
-    Dein Nachname <input type="text" size="30" name="nachname" maxlength="40" value=""/> <br/>
-    Mein Favorit  <input type="checkbox" name="filmfavorit" value="Favorit"/><br/> <br/>
+    <div>
+    Dein Vorname  <input type="text" size="30" name="vorname" maxlength="40" value=""/> <p/>
+    Dein Nachname <input type="text" size="30" name="nachname" maxlength="40" value=""/> <p/>
+    Mein Favorit  <input type="checkbox" name="filmfavorit" value="Favorit"/> <p/>
     </div>
+
 
     <input type="submit" id="absenden" name="absenden" value="Absenden">
 
-</body>
 
+
+</body>
 
 </html>
