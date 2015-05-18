@@ -1,11 +1,11 @@
-#bookentry{
+﻿#bookentry{
     position: relative;
     color: rgb(63, 72, 204);
     font-size: 22px;
     margin-left: 350px;
     height: 100px;
 }
-
+ 
 /*Formular für Buch anlegen*/
 #Infos {
     position: relative;

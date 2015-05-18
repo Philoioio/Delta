@@ -2,48 +2,50 @@
 <html>
 <head lang="de">
     <link rel="stylesheet" type="text/css" href="bookcss.css"/>
+    <script type="text/javascript" src="../Meilenstein3/check.js"></script>
     <meta charset="UTF-8">
     <title id="Titel" >Buch anlegen</title>
 
-    <link rel = "stylesheet" type = "text/css" href ="css/bookcss.css"/>
+
+
 </head>
 
 <body>
 
 <h1 id="bookentry">Buch Anlegen</h1>
 
-<form action="http://martinakraus.net/createBookEntry.php" method="GET">
+<form name="send" action="http://martinakraus.net/createBookEntry.php" method="GET" onclick="return checkjava();">
 
 <div id="Infos">
 
 
     <span class="form">
-    Buchtitel <input type="text" style="width: 192px" class="textbt" name="titel" id="titel" size="30" maxlength="40" value="" autofocus required/>
+    Buchtitel <input type="text" style="width: 192px" id="btitel" class="textbt" name="titel" size="30" maxlength="40" value="" autofocus required/>
     </span>
     <br/>
 
     <span class="form">
-    Buchautor <input type="text" style="width: 192px" class="textba" name="autor"id= "autor" size="30" maxlength="40" value="" required/>
+    Buchautor <input type="text" style="width: 192px"id="autor" class="textba" name="autor" size="30" maxlength="40" value="" required/>
     </span>
     <br/>
 
     <span class="form">
-    ISBN <input type="number" style="width: 192px" class="textISBN" name="isbn" id="isbn" size="30" maxlength="40" value="" required/>
+    ISBN <input type="number" style="width: 192px" id="isbn" class="textISBN" name="isbn" size="30" maxlength="40" value="" required/>
     </span>
     <br/>
 
     <span class="form">
-    Kapitel <input type="number" style="width: 192px" class="textKap" size="30" name="kapitel" id="kapitel" maxlength="40" value="" required/>
+    Kapitel <input type="number" style="width: 192px" id="kapitel" class="textKap" size="30" name="kapitel" maxlength="40" value="" required/>
     </span>
     <br/>
 
     <span class="form">
-    Erscheinungsjahr <input type="number" style="width: 192px" class="textEJ" size="30" name="jahr" id="name" maxlength="40" value="" required/>
+    Erscheinungsjahr <input type="number" id="erscheinungsjahr" style="width: 192px" class="textEJ" size="30" name="jahr" maxlength="40" value="" required/>
     </span>
     <br/>
 
     <span class="form">
-    Auflage <input type="number" style="width: 192px" size = "30" class="textA"  name="auflage" id="auflage" maxlength="40"  value="" required/>
+    Auflage <input type="number" id="auflage" style="width: 192px" size = "30" class="textA"  name="auflage" maxlength="40"  value="" required/>
     </span>
     <br/>
 
@@ -81,11 +83,11 @@
 
     <span class="name">
         <span class="form">
-            Dein Vorname  <input type="text" style="width: 192px" class="textvn" size="30" name="vorname" maxlength="40" value="" required/>
+            Dein Vorname  <input type="text" style="width: 192px" class="textvn" size="30" id="vorname" name="vorname" maxlength="40" value="" required/>
         </span> <br/>
 
         <span class="form">
-            Dein Nachname <input type="text" style="width: 192px" class="textnn" size="30"  name="nachname" maxlength="40" value="" required/>
+            Dein Nachname <input type="text" style="width: 192px" class="textnn" size="30" id="nachname" name="nachname" maxlength="40" value="" required/>
         </span> <br/>
 
         <span class="form">
@@ -94,7 +96,7 @@
     </span>
 
     <div>
-    <input type="submit" style="width: 250px; height: 40px" id="absenden" name="absenden" value="Absenden">
+    <input type="submit" style="width: 250px; height: 40px" id="absenden" name="absenden" value="Absenden" onclick="return checkjava();" />
     </div>
 
 </form>
