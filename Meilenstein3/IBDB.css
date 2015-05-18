@@ -220,18 +220,22 @@ div {
     border-style: solid;
     border-color: rgb(63, 72, 204);
     border-width:5px;
-    width: 40%}
+    width: 40%
+}
 
-#horror {position: absolute; left: 10%}
+#horror {
+    position: absolute;
+    left: 10%
+}
 
 .input:hover{
     background-color: rgb(63,72,204)}
 
 
-#romanLoad {
-    display: none}
-#roman {position: absolute; right: 10%}
-
+#roman {
+    position: absolute;
+    right: 10%
+}
 
 table{
     position: absolute;
@@ -242,15 +246,14 @@ table{
 }
 
 th{
+    color: black;
     border-color: rgb(63, 72, 204);
-    border-style: solid;
-    border-width: 5px;
+    border-width: 4px;
 }
 
 
 td{
     border-color: rgb(63, 72, 204);
-    border-style: solid;
-    border-width:5px
+    border-width:4px
 }
 

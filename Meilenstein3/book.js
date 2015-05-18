@@ -6,6 +6,7 @@ var json = new XMLHttpRequest();
     horror = horror.horrordata;
 
 
+
     json.open("GET", "roman_books.json",false);
     json.send();
     var roman = JSON.parse(json.responseText);
@@ -14,14 +15,15 @@ var json = new XMLHttpRequest();
 
 
 function Horrorbutton(){
-    document.getElementById(roman).style.visibility="hidden";
-    document.getElementById(horror).style.visibility="visible";
+    document.getElementById('romantabelle').style.visibility="hidden";
+    document.getElementById('horrortabelle').style.visibility="visible";
+
 }
 
-function Romanbutton(){
-    document.getElementById(horror).style.visibility="hidden";
-    document.getElementById(roman).style.visibility="visible";
 
+function Romanbutton(){
+    document.getElementById('horrortabelle').style.visibility="hidden";
+    document.getElementById('romantabelle').style.visibility="visible";
 }
 
 
