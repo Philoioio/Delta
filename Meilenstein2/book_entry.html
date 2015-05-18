@@ -14,13 +14,13 @@
 
 <h1 id="bookentry">Buch Anlegen</h1>
 
-<form name="send" action="http://martinakraus.net/createBookEntry.php" method="GET" onclick="return checkjava();">
+<form name="Formular" action="http://martinakraus.net/createBookEntry.php" method="GET"  onsubmit ="return checkjava()">
 
 <div id="Infos">
 
 
     <span class="form">
-    Buchtitel <input type="text" style="width: 192px" id="btitel" class="textbt" name="titel" size="30" maxlength="40" value="" autofocus required/>
+    Buchtitel <input type="text" style="width: 192px" id="btitel" class="textbt" name="titel" size="30" maxlength="40" value="" required />
     </span>
     <br/>
 
@@ -96,7 +96,7 @@
     </span>
 
     <div>
-    <input type="submit" style="width: 250px; height: 40px" id="absenden" name="absenden" value="Absenden" onclick="return checkjava();" />
+    <input type="submit" style="width: 250px; height: 40px" id="absenden" name="absenden" value="Absenden" onsubmit="return checkjava();" />
     </div>
 
 </form>
