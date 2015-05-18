@@ -1,0 +1,256 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Format und Hintergrundfarbe der Webseite*/
+body {
+     margin: 5%;
+     background-color: rgb(153, 217, 234);
+ }
+
+/*Überschrift formatiert*/
+ h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+
+}
+/*Farbige Buchstaben der Überschrift*/
+b {color : rgb(63, 72, 204)}
+
+/*We Books*/
+#webooks {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:72px;
+        font-weight: 900;
+        position: relative;
+        text-align: center;
+        color: rgb(63, 72, 204);
+}
+/*Bild*/
+
+img {
+    width: 400px;
+    height: 245px;
+    display: block;
+    margin: auto;
+    border-color: rgb(63,72,204);
+    border-style: solid;
+    position: relative;
+    border-width: 10px;
+    vertical-align: middle;
+    background-color: rgb(0,0,0);
+}
+/*Das Auswahlmenü*/
+#buttons {
+    margin: 5% 40% 0 40%;
+    border: solid;
+    border-color: rgb(63, 72, 204);
+
+}
+#buttons a {
+    padding: 5% 0 5% 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: rgb(0, 162, 232);
+}
+/*Hover-Effekt*/
+#buttons a:hover {
+    color: rgb(0,0,0);
+    background-color: rgb(63, 72, 204);
+}
+
+/*Book_Entry_Bereich*/
+/****************************************
+************************
+*/
+
+#bookentry{
+    position: relative;
+    color: rgb(63, 72, 204);
+    font-size: 22px;
+    margin-left: 350px;
+    height: 100px;
+}
+
+/*Formular für Buch anlegen*/
+#Infos {
+    position: relative;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 150px;
+}
+
+/*Textfelder positionen*/
+.form .textbt{
+    position: relative;
+    margin-left: 125px;
+}
+
+.form .textba{
+    position: relative;
+    margin-left: 114px;
+    margin-top: 10px;
+}
+
+.form .textISBN{
+    position: relative;
+    margin-left: 156px;
+    margin-top: 10px;
+}
+
+.form .textKap{
+    position: relative;
+    margin-left: 140px;
+    margin-top: 10px;
+}
+
+.form .textEJ{
+    position: relative;
+    margin-left: 58.5px;
+    margin-top: 10px;
+}
+
+.form .textA{
+    position: relative;
+    margin-left: 134.5px;
+    margin-top: 10px;
+}
+
+.form .textadb{
+    position: relative;
+    margin-left: 76.5px;
+    margin-top: 10px;
+}
+
+#adb{
+    width: 200px;
+    text-align: right;
+}
+
+.form .textvn{
+    position: relative;
+    margin-left: 15px;
+}
+
+.form .textnn{
+    position: relative;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+
+.form .textmf{
+    position: relative;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+/* Checkboxen*/
+.checkboxx1, .checkboxx2 {
+    position: absolute;
+    float: right;
+}
+
+.form .checkboxx1{
+    position: relative;
+    margin-left: 88px;
+    margin-top: 10px;
+
+}
+
+.form .checkboxx2 {
+    position: relative;
+    margin-left: 148px;
+    margin-top: 10px;
+}
+
+/*Allgemein für gesamten Body*/
+body{
+    background:rgb(153,217,234);
+    color: rgb(63,72,204);
+
+}
+
+/*Absenden button*/
+#absenden{
+    position: absolute;
+    border: solid;
+    border-color: #3f48cc;
+    background-color: #00a2e8;
+    color: #3f48cc;
+    font-weight: 900;
+
+    margin-left: -175px;
+    margin-top: 250px;
+
+}
+/*für div(ursprünglich für Name)*/
+div {
+    float: left;
+    margin-right: 10%;
+}
+
+
+
+/*Aussehen von book.html*/
+
+#bookhead {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    position: relative;
+    text-align: center;
+    color: rgb(63, 72, 204);
+}
+
+.input {
+    font-family: Verdana;
+    font-size:18px;
+    background-color: rgb(0, 162, 232);
+    border-style: solid;
+    border-color: rgb(63, 72, 204);
+    border-width:5px;
+    width: 40%}
+
+#horror {position: absolute; left: 10%}
+
+.input:hover{
+    background-color: rgb(63,72,204)}
+
+
+#romanLoad {
+    display: none}
+#roman {position: absolute; right: 10%}
+
+
+table{
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th{
+    border-color: rgb(63, 72, 204);
+    border-style: solid;
+    border-width: 5px;
+}
+
+
+td{
+    border-color: rgb(63, 72, 204);
+    border-style: solid;
+    border-width:5px
+}
+

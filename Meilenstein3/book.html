@@ -2,9 +2,9 @@
 <html>
 <head lang="de">
     <link rel="stylesheet" type="text/css" href="IBDB.css"/>
+    <script type="text/javascript" src="horror_books.json"> </script>
+    <script type="text/javascript" src="roman_books.json"> </script>
     <script type="text/javascript" src="book.js"> </script>
-    <script type="text/javascript" src="horror_books.js"> </script>
-    <script type="text/javascript" src="roman_books.js"> </script>
     <meta charset="UTF-8">
     <title>Meine Bücher</title>
 
@@ -14,33 +14,21 @@
 
 <h1 id="bookhead">Meine Bücher</h1>
 
-<header>
+
+<input type="submit" value="Horror" class="input" id="horror" checked="checked" onclick="Horrorbutton()";/>
+<input type="submit" value="Roman" class="input" id="roman" onclick="Romanbutton()";/>
+
 
     <div id="horrorLoad">
-        <script type="text/javascript">loadData(horrorData);</script>
+        <script type="text/javascript">erstelleTabelle(horror);</script>
     </div>
 
     <div id="romanLoad">
-        <script type="text/javascript">loadData(romanData);</script>
+        <script type="text/javascript">erstelleTabelle(roman);</script>
     </div>
 
 
-    <input type="submit" value="Horror" class="horror" id="horror" checked="checked" onclick="tabSwitch(1)";/>
-    <input type="submit" value="Roman"  class="roman" id="roman" onclick="tabSwitch(2);"/>
-
-
-</header>
 
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
