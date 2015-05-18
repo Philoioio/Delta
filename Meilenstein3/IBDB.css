@@ -213,6 +213,7 @@ div {
     color: rgb(63, 72, 204);
 }
 
+/* button design*/
 .input {
     font-family: Verdana;
     font-size:18px;
@@ -221,22 +222,26 @@ div {
     border-color: rgb(63, 72, 204);
     border-width:5px;
     width: 40%
+
 }
 
+/* horror button maße*/
 #horror {
     position: absolute;
     left: 10%
 }
 
+/* horror wird selektiert*/
 .input:hover{
     background-color: rgb(63,72,204)}
 
-
+/* roman button maße*/
 #roman {
     position: absolute;
     right: 10%
 }
 
+/* Tabellen konfiguration*/
 table{
     position: absolute;
     top: 23%;
@@ -245,13 +250,14 @@ table{
     border-collapse: collapse;
 }
 
+/* table head design*/
 th{
     color: black;
     border-color: rgb(63, 72, 204);
     border-width: 4px;
 }
 
-
+/* Tabelle Zelle desgin*/
 td{
     border-color: rgb(63, 72, 204);
     border-width:4px
