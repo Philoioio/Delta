@@ -18,36 +18,22 @@ var json = new XMLHttpRequest();
     var roman = JSON.parse(json.responseText);
     roman = roman.romandata;
 
+    var data;
 
 /* Zeigt Horrortabelle an */
 function Horrorbutton(){
     document.getElementById('romantabelle').style.visibility="hidden";
     document.getElementById('horrortabelle').style.visibility="visible";
-
+    data = horror;
 }
 
 /* Zeigt Romantabelle an*/
 function Romanbutton(){
     document.getElementById('horrortabelle').style.visibility="hidden";
     document.getElementById('romantabelle').style.visibility="visible";
-
+    data = roman;
 }
 
-/*
-function onoff () {
-
-    if (document.getElementById("romantabelle").style.display = "none")
-    {
-            document.getElementById("horrortabelle").style.display = "inline";
-        }
-
-
-    elseif (document.getElementById("romantabelle").style.display = "inline")
-    {
-        document.getElementById("horrortabelle").style.display = "none";
-    }
-}
-*/
 
 /* Erstellt Tabelle*/
 function erstelleTabelle(roman) {
@@ -106,3 +92,50 @@ function erstelleTabelle(horror) {
     }
     document.writeln("</table>");
 }
+
+
+function tableflip(data){
+    if(data == "horror" || data == horror){
+        document.getElementById('horrortabelle').innerHTML = xmlhttp.responseText;
+    }
+    else if(data == "roman" || data == roman) {
+        document.getElementById('romantabelle').innerHTML = xmlhttp.responseText;
+    }
+}
+
+function loadDatabase(data) {
+
+    var xmlhttp = new XMLHttpRequest(data);
+    var url = "http://localhost/Delta/Meilenstein5/php/getBooks.php?q="+data;
+
+    if (data == roman) {
+        xmlhttp.onreadystatechange = function () {
+            // Antwort des Servers liegt vollständig vor und die Anfrage war erfolgreich
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                tableflip(data);
+                document.getElementById(data).style.background = "rgb(0,162,232)";
+            }
+        }
+    }
+    else if (data == horror) {
+        xmlhttp.onreadystatechange = function () {
+            // Antwort des Servers liegt vollständig vor und die Anfrage war erfolgreich
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                tableflip(data);
+                document.getElementById(data).style.background = "rgb(0,162,232)";
+            }
+        }
+    }
+
+    xmlhttp.open("GET", url, true);
+    // Anfrage absenden
+    xmlhttp.send();
+}
+
+
+/*            if(str == "horror"){
+ document.getElementById("bookTableHorror").innerHTML = xmlhttp.responseText;
+ }
+ else {
+ document.getElementById("bookTableRoman").innerHTML = xmlhttp.responseText;
+ } */
