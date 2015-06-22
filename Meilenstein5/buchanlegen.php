@@ -1,5 +1,3 @@
-
-
 <?php
 $my_file = "books.txt";
 $handle = fopen($my_file, "w") or die("Unable to open file!".$my_file);
