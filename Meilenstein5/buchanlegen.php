@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> a758fc9aef802bae290889e2f9657fab8f57f696
 <?php
 /** Zuweisung der manuell angelegten book.txt Datei in die der Text geschrieben wird. */
-$my_file = "books.txt";
+$my_file = "./books.txt";
 
 /** Öffnen der Datei und Anweisung dass in ihr geschrieben wird, für den Fall
  *  dass die Textdatei nicht vorhanden ist wird ein Fehler ausgelöst.
