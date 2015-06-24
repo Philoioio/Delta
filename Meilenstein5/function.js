@@ -1,5 +1,5 @@
 function loadDatabase(data) {
-
+    //Erzeugt neuen Request an den Server
     var xmlhttp = new XMLHttpRequest(data);
     var url = "./getBooks.php?json="+data;
 
@@ -13,13 +13,13 @@ function loadDatabase(data) {
         }
     }
 
-
+    
     xmlhttp.open("GET", url, true);
     xmlhttp.setRequestHeader('Content-Type', 'application/json');
     // Anfrage absenden
     xmlhttp.send();
 }
-
+//erstellt Tabellen
 function erstelleTabelle(data) {
 
     tableJSON = "<table border='1'><tr>" +
