@@ -1,8 +1,9 @@
 <?php
 //Anmeldedaten
+
 $localhost = "localhost";
-$username = "Ich";
-$password = "hajasoises";
+$username = "marvin";
+$password = "hass";
 $database = "myBooks";
 
 
@@ -69,63 +70,67 @@ if ("GET" == $_SERVER ["REQUEST_METHOD"]) {
         if ($allowed != $notAllowed) {
             exit("Eingabewert falsch");
         }
-    }
-}
 
-        if(!$allowed) {
 
-            $checkboxen = count($_GET['genre']);
-            if ($checkboxen == 1) {
-                $genre = $_GET['genre'][0];
-            } //zum Auslesen mehr checkboxen
-            else if ($checkboxen > 1) {
 
-                $arten = array(); //leer
-                foreach ($_GET['genre'] as $art) {
-                    $arten[] = $art;
-                }
+    if ($allowed) {
 
-                $genre = implode($arten);
-            } else {
-                $genre = "-";
+        $checkboxen = count($_GET['genre']);
+        if ($checkboxen == 1) {
+            $genre = $_GET['genre'][0];
+        } //zum Auslesen mehr checkboxen
+        else if ($checkboxen > 1) {
 
-                //erzeugt Tabelle mit Eigenschaften
-                $sql = "INSERT INTO book(isbn, erscheinungsjahr, auflage, autor, titel, kapitel, art, genre)
+            $arten = array(); //leer
+            foreach ($_GET['genre'] as $art) {
+                $arten[] = $art;
+            }
+
+            $genre = implode($arten);
+        } else {
+            $genre = "-";
+
+            //erzeugt Tabelle mit Eigenschaften
+            $sql = "INSERT INTO book(isbn, erscheinungsjahr, auflage, autor, titel, kapitel, art, genre)
                     VALUES('$autor', '$titel', '$kapitel', '$art', '$isbn', '$erscheinungsjahr', '$auflage', '$genre')";
 
-                // Schickt die Anfrage an die DB und übergibt in Variable
-                $sqlRequest = mysqli_query($connection, $sql);
+            // Schickt die Anfrage an die DB und übergibt in Variable
+            $sqlRequest = mysqli_query($connection, $sql);
 
-                if (!$sqlRequest) {
-                    echo "Kein Speichern eines Datensatzes möglich";
-                }
+            if (!$sqlRequest) {
+                echo "Kein Speichern eines Datensatzes möglich";
+            }
 
-                $sql = "INSERT INTO benutzerInfo (benutzer, favorit)
+            $sql = "INSERT INTO benutzerInfo (benutzer, favorit)
                      VALUES('$name', '$favorit')";
 
-                $sqlRequest = mysqli_query($connection, $sql);
-            }
+            $sqlRequest = mysqli_query($connection, $sql);
+
+
 
         }
+        }
+    }
+}
     mysqli_close($connection);
 
-            function isbn($value)
-            {
-                if ((strlen($value) != 13)) {
-                    return true;
-                }
-            }
+    function isbn($value)
+    {
+        if ((strlen($value) != 13)) {
+            return true;
+        }
+    }
 
-            function jahrAbfrage($value)
-            {
-                if ($value < 1000 || strlen($value) != 4 || $value < date("Y")) {
-                    return true;
-                }
-            }
+    function jahrAbfrage($value)
+    {
+        if ($value < 1000 || strlen($value) != 4 || $value < date("Y")) {
+            return true;
+        }
+    }
 
-            function auflage($value)
-            {
-                if ($value < 0) {
-                    return true;
-                }
-            }
+    function auflage($value)
+    {
+        if ($value < 0) {
+            return true;
+        }
+    }
